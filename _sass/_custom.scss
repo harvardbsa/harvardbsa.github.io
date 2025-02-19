@@ -2,12 +2,12 @@ html {
   body {
     .page__footer {
       position: relative;
-      min-height: 120px;  // Give some space for the banner
+      padding-bottom: 120px !important; // Make space for the banner
       
       &::after {
         content: '';
         display: block;
-        position: absolute;
+        position: fixed; // Change to fixed to ensure it stays at bottom
         left: 0;
         right: 0;
         bottom: 0;
@@ -16,7 +16,8 @@ html {
         background-image: url('/images/banner_image.jpeg');
         background-repeat: repeat-x;
         background-position: bottom;
-        z-index: 1;  // Ensure it's above other elements
+        z-index: 1;
+        pointer-events: none; // Allow clicking through the banner
       }
       
       footer {
@@ -25,4 +26,15 @@ html {
       }
     }
   }
+}
+
+.page__footer-follow,
+.page__footer-copyright {
+  position: relative;
+  z-index: 2;
+}
+
+// Debug style to confirm CSS is loading
+.greedy-nav .site-title {
+  color: #8b0000 !important; // Dark red color
 }
