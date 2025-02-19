@@ -90,6 +90,9 @@ nav#site-nav {
     .visible-links {
       background-color: #A51C30 !important; // Remove white background
       border: none !important; // Remove any borders
+      .masthead__menu-item {
+        background-color: #A51C30 !important; // Remove white background 
+      }
     }
   }
 }
