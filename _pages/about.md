@@ -8,7 +8,3 @@ redirect_from:
 ---
 
 The Harvard Bangladeshi Students Association (HBSA) is dedicated to fostering a vibrant, supportive, and empowered community for Bangladeshi students across all Harvard schools and programs. It aims to give a centralized platform for professional networking, cultural programming, and peer support, while celebrating the rich heritage of Bengali culture through diverse events. Beyond community-building, HBSA is committed to improving access to educational and professional opportunities for students of Bangladeshi origin and strengthen connections among Bangladeshi students, alumni, and affiliates at Harvard.
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
