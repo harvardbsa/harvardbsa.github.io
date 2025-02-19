@@ -62,28 +62,39 @@ body {
 
 // New header styles
 .masthead {
-    background-color: #A51C30 !important; // Harvard Crimson color
-    border: none !important; // Remove any borders
-  }
-  
-  nav#site-nav {
+  background-color: #A51C30 !important; // Harvard Crimson color
+  border: none !important; // Remove any borders
+}
+
+nav#site-nav {
+  background-color: transparent !important; // Set to transparent
+
+  .greedy-nav {
     background-color: transparent !important; // Set to transparent
-  
-    .greedy-nav {
-      background-color: transparent !important; // Set to transparent
-  
-      // Style all navigation links
-      a {
-        color: white !important; // Set link color to white
-  
-        &:hover {
-          color: #f0f0f0 !important; // Slightly lighter on hover
-        }
-      }
-  
-      // Style the site title specifically
-      .site-title {
-        color: white !important; // Ensure site title is white
+
+    // Style all navigation links
+    a {
+      color: white !important; // Set link color to white
+
+      &:hover {
+        color: #f0f0f0 !important; // Slightly lighter on hover
       }
     }
+
+    // Style the site title specifically
+    .site-title {
+      color: white !important; // Ensure site title is white
+    }
+
+    // Target the visible links specifically
+    .visible-links {
+      background-color: transparent !important; // Remove white background
+      border: none !important; // Remove any borders
+    }
   }
+}
+
+// Ensure all other text in the masthead is white
+.masthead * {
+  color: white !important; // Force all text to be white
+}
