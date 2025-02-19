@@ -27,5 +27,20 @@ layout: compress
 
     {% include scripts.html %}
 
+    <script>
+      document.addEventListener('scroll', function() {
+        const footer = document.querySelector('.page__footer');
+        const scrollPosition = window.scrollY + window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+    
+        // Show footer when scrolled to the bottom
+        if (scrollPosition >= documentHeight) {
+          footer.style.bottom = '0'; // Show footer
+        } else {
+          footer.style.bottom = '-100px'; // Hide footer
+        }
+      });
+    </script>
+
   </body>
 </html>
