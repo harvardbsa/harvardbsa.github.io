@@ -46,3 +46,44 @@ body {
 .page__content {
   margin-bottom: 0 !important;
 }
+
+// Style the masthead/navigation
+.masthead {
+  background-color: #A51C30 !important; // Harvard Crimson color
+  
+  // Style the navigation items
+  .greedy-nav {
+    background-color: #A51C30 !important;
+    
+    // Style all navigation links
+    a {
+      color: white !important;
+      
+      &:hover {
+        color: #f0f0f0 !important; // Slightly darker white on hover
+      }
+    }
+    
+    // Style the site title specifically
+    .site-title {
+      color: white !important;
+    }
+    
+    // Style the navigation items
+    .visible-links {
+      a {
+        color: white !important;
+        
+        &:before {
+          background: white !important;
+        }
+      }
+    }
+    
+    // Style the toggle menu button (mobile)
+    .toggle-menu-wrapper button {
+      color: white !important;
+      background-color: transparent !important;
+    }
+  }
+}
