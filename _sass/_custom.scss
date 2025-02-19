@@ -2,27 +2,31 @@ html {
   body {
     .page__footer {
       position: relative;
-      padding-bottom: 120px !important; // Make space for the banner
+      padding: 0 !important;
+      margin: 0 !important;
+      background-color: transparent !important;
+      
+      // Hide the default footer content
+      .page__footer-follow,
+      .page__footer-copyright {
+        display: none !important;
+      }
       
       &::after {
         content: '';
         display: block;
-        position: fixed; // Change to fixed to ensure it stays at bottom
+        position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
         width: 100%;
-        height: 100px;
+        height: 50px; // Adjust this value to control banner height
         background-image: url('/images/banner_image.jpeg');
         background-repeat: repeat-x;
         background-position: bottom;
+        background-size: auto 100%; // This will maintain the aspect ratio while filling the height
         z-index: 1;
-        pointer-events: none; // Allow clicking through the banner
-      }
-      
-      footer {
-        position: relative;
-        z-index: 2;  // Keep footer content above the banner
+        pointer-events: none;
       }
     }
   }
@@ -37,4 +41,9 @@ html {
 // Debug style to confirm CSS is loading
 .greedy-nav .site-title {
   color: #8b0000 !important; // Dark red color
+}
+
+// Remove extra spacing at bottom of page
+.page__content {
+  margin-bottom: 0 !important;
 }
