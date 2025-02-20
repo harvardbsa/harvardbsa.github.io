@@ -79,6 +79,8 @@ body {
 .masthead {
   background-color: #A51C30 !important; // Harvard Crimson color
   border: none !important; // Remove any borders
+  position: relative !important; // Ensure it stays in view
+  z-index: 1000 !important; // Ensure it is above other elements
 }
 
 nav#site-nav {
