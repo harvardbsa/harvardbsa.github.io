@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Harvard Bangladesh Student Association"
+title: "Harvard Bangladeshi Students Association"
 author_profile: true
 redirect_from: 
   - /about/
